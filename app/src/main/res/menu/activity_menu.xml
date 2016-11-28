@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@mipmap/realm_icon"
+        android:title="产品">
+        <menu>
+            <item
+                android:icon="@mipmap/realm_icon"
+                android:title="Realm Mobile Platform" />
+            <item
+                android:icon="@mipmap/realm_icon"
+                android:title="Realm Mobile Database" />
+        </menu>
+    </item>
+    <item
+        android:icon="@mipmap/community"
+        android:title="社区">
+        <menu>
+            <item
+                android:icon="@drawable/vector_android"
+                android:title="Java" />
+            <item
+                android:icon="@drawable/vector_oc"
+                android:title="Objective-C" />
+            <item
+                android:icon="@drawable/vector_react"
+                android:title="React Native" />
+            <item
+                android:icon="@drawable/vector_swift"
+                android:title="Swift" />
+            <item
+                android:icon="@drawable/vector_xamarin"
+                android:title="Xamarin" />
+        </menu>
+    </item>
+    <group>
+        <item
+            android:icon="@mipmap/news"
+            android:title="新闻" />
+        <item
+            android:icon="@mipmap/document"
+            android:title="文档" />
+        <item
+            android:icon="@mipmap/price"
+            android:title="价格" />
+    </group>
+    <item
+        android:icon="@mipmap/contact"
+        android:title="联系我们" />
+</menu>

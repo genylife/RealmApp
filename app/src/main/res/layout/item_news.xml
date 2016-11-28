@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="news"
+            type="top.genylife.realm.mainpage.viewmodel.NewsCardVM" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:text="@{news.title}"
+                android:textColor="#FF4081"
+                android:textSize="28sp"
+                tools:text="Rxjava介绍" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="@{news.content}"
+                tools:text="在这篇演讲中，我们会讨论传统的安卓开发方法，这些方法容易出错的地方和 RxJava 是如何解决这些问题的。除了提及 Rxjava 的初衷，这篇演讲也提供了一些常见的 RxJava 的使用实例，和一些第一次使用 RxJava 的常见陷阱。这篇演讲不需要 Rx 基础." />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:text="@{news.author}"
+                android:textColor="#2196F3"
+                tools:text="Christina Lee " />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/author"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:text="@{news.time}"
+                android:textColor="#757575"
+                tools:text="10291819" />
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/time"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/author"
+                android:layout_marginRight="8dp"
+                android:padding="6dp"
+                android:src="@drawable/vector_realm" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

@@ -1,4 +1,4 @@
-package top.genylife.realm.mainpage.viewmodel;
+package top.genylife.realm.mvp.main;
 
 /**
  * Created by wanqi on 2016/11/25.

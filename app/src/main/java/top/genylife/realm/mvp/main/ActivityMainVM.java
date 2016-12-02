@@ -1,9 +1,12 @@
-package top.genylife.realm.mainpage.viewmodel;
+package top.genylife.realm.mvp.main;
 
 import android.databinding.BindingAdapter;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import top.genylife.realm.OnLoadMoreListener;
+import javax.inject.Inject;
+
+import top.genylife.realm.listener.OnLoadMoreListener;
 
 /**
  * Created by wanqi on 2016/11/25.
@@ -13,11 +16,18 @@ import top.genylife.realm.OnLoadMoreListener;
 
 public class ActivityMainVM {
 
-    public RecyclerView.Adapter adapter;
+    @Inject
+    public NewsAdapter adapter;
 
-    public RecyclerView.LayoutManager layoutManager;
+    @Inject
+    public LinearLayoutManager layoutManager;
 
     public OnLoadMoreListener scrollListener;
+
+    @Inject
+    public ActivityMainVM() {
+
+    }
 
     @BindingAdapter({"adapter"})
     public static void setRecyclerViewAdapter(RecyclerView view, RecyclerView.Adapter adapter) {

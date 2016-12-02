@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="top.genylife.realm.mainpage.viewmodel.ActivityMainVM" />
+            type="top.genylife.realm.mvp.main.ActivityMainVM" />
     </data>
 
     <android.support.design.widget.CoordinatorLayout

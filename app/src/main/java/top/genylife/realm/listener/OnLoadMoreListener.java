@@ -1,4 +1,4 @@
-package top.genylife.realm;
+package top.genylife.realm.listener;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;

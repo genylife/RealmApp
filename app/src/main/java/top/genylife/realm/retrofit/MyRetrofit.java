@@ -28,7 +28,7 @@ public class MyRetrofit {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .retryOnConnectionFailure(false)
                 .connectTimeout(10, TimeUnit.SECONDS)
-                .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+                .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.HEADERS))
                 .build();
         mRetrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)

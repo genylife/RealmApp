@@ -1,9 +1,11 @@
-package top.genylife.realm.mainpage.model;
+package top.genylife.realm.mvp.model;
 
 import com.google.auto.value.AutoValue;
 
+import java.io.Serializable;
+
 import top.genylife.realm.Transform;
-import top.genylife.realm.mainpage.viewmodel.NewsCardVM;
+import top.genylife.realm.mvp.main.NewsCardVM;
 
 /**
  * Created by wanqi on 2016/11/26.
@@ -11,7 +13,7 @@ import top.genylife.realm.mainpage.viewmodel.NewsCardVM;
  * @since 1.0.0
  */
 @AutoValue
-public abstract class News implements Transform<NewsCardVM> {
+public abstract class News implements Transform<NewsCardVM>,Serializable {
 
     public abstract String author();
 

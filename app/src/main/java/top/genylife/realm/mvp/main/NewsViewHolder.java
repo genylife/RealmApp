@@ -1,4 +1,4 @@
-package top.genylife.realm.mainpage;
+package top.genylife.realm.mvp.main;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import top.genylife.realm.databinding.ItemNewsBinding;
-import top.genylife.realm.mainpage.viewmodel.NewsCardVM;
 
 /**
  * Created by wanqi on 2016/11/25.

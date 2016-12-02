@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_intro"
         android:paddingStart="16dp"
-        android:text="Realm"
+        android:text="@string/realm"
         android:textColor="@android:color/white"
         android:textSize="22sp" />
 
@@ -25,7 +25,7 @@
         android:layout_alignParentBottom="true"
         android:maxLines="2"
         android:paddingStart="16dp"
-        android:text="受亿万开发者所信赖的数据库现已完全开放源代码并且仍然免费"
+        android:text="@string/realm_intro"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 </RelativeLayout>

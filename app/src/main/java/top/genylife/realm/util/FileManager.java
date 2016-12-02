@@ -60,8 +60,7 @@ public class FileManager {
         try {
             Source source = Okio.source(file);
             BufferedSource buffer = Okio.buffer(source);
-            String string = buffer.readString(Charset.defaultCharset());
-            return string;
+            return buffer.readString(Charset.defaultCharset());
         } catch (IOException e) {
             e.printStackTrace();
         }

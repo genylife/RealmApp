@@ -4,49 +4,49 @@
 
     <item
         android:icon="@mipmap/realm_icon"
-        android:title="产品">
+        android:title="@string/products">
         <menu>
             <item
                 android:icon="@mipmap/realm_icon"
-                android:title="Realm Mobile Platform" />
+                android:title="@string/realm_mobile_platform" />
             <item
                 android:icon="@mipmap/realm_icon"
-                android:title="Realm Mobile Database" />
+                android:title="@string/realm_mobile_database" />
         </menu>
     </item>
     <item
         android:icon="@mipmap/community"
-        android:title="社区">
+        android:title="@string/community">
         <menu>
             <item
                 android:icon="@drawable/vector_android"
-                android:title="Java" />
+                android:title="@string/java" />
             <item
                 android:icon="@drawable/vector_oc"
-                android:title="Objective-C" />
+                android:title="@string/objective_c" />
             <item
                 android:icon="@drawable/vector_react"
-                android:title="React Native" />
+                android:title="@string/react_native" />
             <item
                 android:icon="@drawable/vector_swift"
-                android:title="Swift" />
+                android:title="@string/swift" />
             <item
                 android:icon="@drawable/vector_xamarin"
-                android:title="Xamarin" />
+                android:title="@string/xamarin" />
         </menu>
     </item>
     <group>
         <item
             android:icon="@mipmap/news"
-            android:title="新闻" />
+            android:title="@string/news" />
         <item
             android:icon="@mipmap/document"
-            android:title="文档" />
+            android:title="@string/document" />
         <item
             android:icon="@mipmap/price"
-            android:title="价格" />
+            android:title="@string/price" />
     </group>
     <item
         android:icon="@mipmap/contact"
-        android:title="联系我们" />
+        android:title="@string/contact" />
 </menu>

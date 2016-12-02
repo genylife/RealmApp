@@ -11,7 +11,7 @@ import top.genylife.realm.mvp.App;
  * @since 1.0.0
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     protected AppComponent getAppComponent() {
         return ((App) getApplication()).getAppComponent();

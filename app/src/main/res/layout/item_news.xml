@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/content"
                 android:maxLines="1"
-                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
                 android:text="@{news.author}"
                 android:textColor="#2196F3"
                 tools:text="Christina Lee " />
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/author"
                 android:maxLines="1"
-                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
                 android:text="@{news.time}"
                 android:textColor="#757575"
                 tools:text="10291819" />
@@ -73,7 +73,7 @@
                 android:layout_alignBottom="@+id/time"
                 android:layout_alignParentEnd="true"
                 android:layout_alignTop="@+id/author"
-                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
                 android:padding="6dp"
                 android:src="@drawable/vector_realm" />
         </RelativeLayout>

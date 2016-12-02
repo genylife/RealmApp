@@ -38,18 +38,18 @@ public class StringConverterFactory extends Converter.Factory {
         return super.stringConverter(type, annotations, retrofit);
     }
 
-    class StringRequestBodyConverter<T> implements Converter<T, RequestBody> {
+    private class StringRequestBodyConverter implements Converter<String, RequestBody> {
 
 
         private final MediaType MEDIA_TYPE = MediaType.parse("text/plain; charset=UTF-8");
 
         @Override
-        public RequestBody convert(T value) {
-            return RequestBody.create(MEDIA_TYPE, value.toString());
+        public RequestBody convert(String value) {
+            return RequestBody.create(MEDIA_TYPE, value);
         }
     }
 
-    class StringResponseBodyConverter implements Converter<ResponseBody, String> {
+    private class StringResponseBodyConverter implements Converter<ResponseBody, String> {
 
         @Override
         public String convert(ResponseBody value) throws IOException {

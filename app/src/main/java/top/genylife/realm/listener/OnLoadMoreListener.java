@@ -1,6 +1,5 @@
 package top.genylife.realm.listener;
 
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -12,27 +11,20 @@ import android.support.v7.widget.RecyclerView;
 
 public abstract class OnLoadMoreListener extends RecyclerView.OnScrollListener {
 
-    private LinearLayoutManager layoutManager;
     private int itemCount, lastPosition, lastItemCount;
 
     public abstract void onLoadMore(int itemCount);
 
     @Override
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-        if (recyclerView.getLayoutManager() instanceof GridLayoutManager) {
-            layoutManager = (GridLayoutManager) recyclerView.getLayoutManager();
-
-            itemCount = layoutManager.getItemCount();
-            lastPosition = layoutManager.findLastCompletelyVisibleItemPosition();
-        }
-        if (recyclerView.getLayoutManager() instanceof LinearLayoutManager) {
-            layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+        if(recyclerView.getLayoutManager() instanceof LinearLayoutManager) {
+            LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
 
             itemCount = layoutManager.getItemCount();
             lastPosition = layoutManager.findLastCompletelyVisibleItemPosition();
         }
 
-        if (lastItemCount != itemCount && lastPosition == itemCount - 1) {
+        if(lastItemCount != itemCount && lastPosition == itemCount - 1) {
             lastItemCount = itemCount;
             this.onLoadMore(itemCount);
         }

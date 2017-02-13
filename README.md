@@ -18,5 +18,5 @@
 
   #### 演示：
 
-  <img height=360 width=640 src="gif/screenshot.gif"/>
+  <img height=640 width=360 src="gif/screenshot.gif"/>
 

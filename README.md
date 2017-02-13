@@ -17,5 +17,6 @@
 * jsoup
 
   演示：
-  <iframe height=360 width=640 src="../gif/screenshot.gif">
+  <img height=360 width=640 src="../gif/screenshot.gif"/>
+
 

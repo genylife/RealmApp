@@ -1,11 +1,11 @@
-package top.genylife.realm.mvp.model;
+package top.genylife.realm.function.model;
 
 import com.google.auto.value.AutoValue;
 
 import java.io.Serializable;
 
 import top.genylife.realm.Transform;
-import top.genylife.realm.mvp.main.NewsCardVM;
+import top.genylife.realm.function.main.NewsCardVM;
 
 /**
  * Created by wanqi on 2016/11/26.

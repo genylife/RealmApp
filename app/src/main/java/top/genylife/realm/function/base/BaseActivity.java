@@ -1,9 +1,9 @@
-package top.genylife.realm.mvp.base;
+package top.genylife.realm.function.base;
 
 import android.support.v7.app.AppCompatActivity;
 
 import top.genylife.realm.injector.components.AppComponent;
-import top.genylife.realm.mvp.App;
+import top.genylife.realm.function.App;
 
 /**
  * Created by wanqi on 2016/12/1.

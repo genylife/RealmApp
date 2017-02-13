@@ -5,7 +5,7 @@ import android.app.Activity;
 import dagger.Component;
 import top.genylife.realm.injector.PerActivity;
 import top.genylife.realm.injector.module.MainActivityModule;
-import top.genylife.realm.mvp.main.MainActivity;
+import top.genylife.realm.function.main.MainActivity;
 
 /**
  * Created by wanqi on 2016/12/1.

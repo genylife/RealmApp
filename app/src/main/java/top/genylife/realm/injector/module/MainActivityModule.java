@@ -10,7 +10,7 @@ import dagger.Provides;
 import top.genylife.realm.R;
 import top.genylife.realm.databinding.ActivityMainBinding;
 import top.genylife.realm.injector.PerActivity;
-import top.genylife.realm.mvp.main.MainActivity;
+import top.genylife.realm.function.main.MainActivity;
 
 /**
  * Created by wanqi on 2016/12/1.
@@ -34,7 +34,7 @@ public class MainActivityModule {
 
     @Provides
     LinearLayoutManager provideLinearLayoutManager() {
-        return new LinearLayoutManager(mMainActivity,LinearLayoutManager.VERTICAL, false);
+        return new LinearLayoutManager(mMainActivity, LinearLayoutManager.VERTICAL, false);
     }
 
     @Provides
@@ -46,4 +46,5 @@ public class MainActivityModule {
     ActivityMainBinding provideActivityMainBinding() {
         return DataBindingUtil.setContentView(mMainActivity, R.layout.activity_main);
     }
+
 }

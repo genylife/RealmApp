@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import rx.schedulers.Schedulers;
 import top.genylife.realm.retrofit.converter.StringConverterFactory;
 
 /**
@@ -34,6 +36,7 @@ public class MyRetrofit {
                 .baseUrl(BASE_URL)
                 .client(okHttpClient)
                 .addConverterFactory(new StringConverterFactory())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.createWithScheduler(Schedulers.newThread()))
                 .build();
     }
 

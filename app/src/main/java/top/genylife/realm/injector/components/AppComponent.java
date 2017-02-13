@@ -4,7 +4,7 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 import top.genylife.realm.injector.module.AppModule;
-import top.genylife.realm.mvp.App;
+import top.genylife.realm.function.App;
 
 /**
  * Created by wanqi on 2016/11/29.

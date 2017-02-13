@@ -3,18 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/product"
         android:icon="@mipmap/realm_icon"
         android:title="@string/products">
         <menu>
             <item
+                android:id="@+id/product_platform"
                 android:icon="@mipmap/realm_icon"
                 android:title="@string/realm_mobile_platform" />
             <item
+                android:id="@+id/product_database"
                 android:icon="@mipmap/realm_icon"
                 android:title="@string/realm_mobile_database" />
         </menu>
     </item>
-    <item
+    <!--<item
         android:icon="@mipmap/community"
         android:title="@string/community">
         <menu>
@@ -34,19 +37,23 @@
                 android:icon="@drawable/vector_xamarin"
                 android:title="@string/xamarin" />
         </menu>
-    </item>
+    </item>-->
     <group>
         <item
+            android:id="@+id/news"
             android:icon="@mipmap/news"
             android:title="@string/news" />
         <item
+            android:id="@+id/docs"
             android:icon="@mipmap/document"
             android:title="@string/document" />
         <item
+            android:id="@+id/price"
             android:icon="@mipmap/price"
             android:title="@string/price" />
     </group>
     <item
+        android:id="@+id/contact"
         android:icon="@mipmap/contact"
         android:title="@string/contact" />
 </menu>

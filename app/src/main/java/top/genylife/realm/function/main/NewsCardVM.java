@@ -1,4 +1,4 @@
-package top.genylife.realm.mvp.main;
+package top.genylife.realm.function.main;
 
 /**
  * Created by wanqi on 2016/11/25.
